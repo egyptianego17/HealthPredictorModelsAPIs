@@ -45,3 +45,14 @@ class ChronicKidneyInputData(BaseModel):
     CholesterolTotal: float
     ACEInhibitors: int
     HeavyMetalsExposure: int
+
+# Define the input data model for parsing the medical report
+class MedicalReportData(BaseModel):
+    gender: int
+    age: int
+    hypertension: int
+    heart_disease: int
+    smoking_history: int
+    bmi: float
+    HbA1c_level: float
+    blood_glucose_level: int
